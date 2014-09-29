@@ -233,6 +233,7 @@ SITE_TAGLINE=""
 SEARCH_MODEL_CHOICES = []
 BLOG_SLUG="event-activities"
 
+SECRET_KEY="merluza"
 
 ################
 # APPLICATIONS #
