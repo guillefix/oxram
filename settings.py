@@ -268,6 +268,7 @@ INSTALLED_APPS = (
     "django.contrib.admindocs",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
+    "gunicorn",
 )
 
 # List of processors used by RequestContext to populate the context.

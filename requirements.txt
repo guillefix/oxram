@@ -35,3 +35,4 @@ static3==0.5.1
 tzlocal==1.0
 wsgiref==0.1.2
 yolk==0.4.3
+distribute==0.6.24
