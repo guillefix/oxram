@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput; python manage.py run_gunicorn -b 0.0.0.0:8000
+web: gunicorn wsgi -b 0.0.0.0:$PORT

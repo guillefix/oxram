@@ -94,10 +94,7 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [
-    '.localhost',  # Allow domain and subdomains
-    '.localhost.', # Also allow FQDN and subdomains
-]
+
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -156,15 +153,6 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-import os
-PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_PATH, 'static'),
-)
-
 # The numeric mode to set newly-uploaded files to. The value should be
 # a mode you'd pass directly to os.chmod.
 FILE_UPLOAD_PERMISSIONS = 0o644
@@ -174,8 +162,24 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 # DATABASES #
 #############
 
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+
+DATABASES = {
+"default": {
+# Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+"ENGINE": "django.db.backends.",
+# DB name or path to database file if using sqlite3.
+"NAME": "",
+# Not used with sqlite3.
+"USER": "",
+# Not used with sqlite3.
+"PASSWORD": "",
+# Set to empty string for localhost. Not used with sqlite3.
+"HOST": "",
+# Set to empty string for default. Not used with sqlite3.
+"PORT": "",
+}
+}
+
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -350,6 +354,23 @@ OPTIONAL_APPS = (
 #     "SECRET_KEY": SECRET_KEY,
 #     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+# Static asset configuration
+# import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+# os.path.join(BASE_DIR, 'static'),
+# )
+
 
 
 ##################
