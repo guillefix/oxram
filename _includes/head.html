@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/style.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/half-slider.css">
+  <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+  <script src="{{ site.github.url }}/js/jquery/jquery.js"></script>
+  <script src="{{ site.github.url }}/js/jquery/jquery-ui.min.js"></script>
+  <script src="{{ site.github.url }}/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{{ site.github.url }}/css/round-about.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.min.css">
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.print.css"> -->
+  <link rel="stylesheet" href="{{ site.github.url }}/css/font-awesome.min.css">
+
+
+
+ <!-- <script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script> -->
+  <script src='{{ site.github.url }}/js/fullcalendar/fullcalendar.min.js'></script>
+  <!--<script src='css/fullcalendar.min.css'></script>-->
+  <script src='{{ site.github.url }}/js/fullcalendar/gcal.js'></script>
+  <script src='{{ site.github.url }}/js/script.js'></script>
+</head>
