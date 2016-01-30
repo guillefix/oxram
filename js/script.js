@@ -38,7 +38,29 @@ $(document).ready(function() {
           alert('a day has been clicked!');
       }
     });
-  });
+$("#register").on("click", function() {
+  email = $("#emailInput").val();
+  // console.log($.get("https://maker.ifttt.com/trigger/ox3dp/with/key/dxjeJ1cCPHSh38dH3pN_hT?value1="+email));
+  function httpGet(theUrl) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+  }
+  console.log(httpGet("https://maker.ifttt.com/trigger/ox3dp/with/key/dxjeJ1cCPHSh38dH3pN_hT?value1="+email));
+//   $.ajax({
+//   // method: "GET",
+//   url: "https://maker.ifttt.com/trigger/ox3dp/with/key/dxjeJ1cCPHSh38dH3pN_hT",
+//   data: { "value1": email }
+// }).done(function( msg ) {
+//     console.log( "Data Saved: " + msg );
+//   });
+
+});
+
+});
+
+
 
 // 	$("#POSTtest").on("click", function() {
 // 		var myCookie = readCookie("testCookie");
