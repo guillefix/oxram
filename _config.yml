@@ -6,16 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Oxford 3D Printing Society
+email: president@oxford3dprintingsociety.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  # Write an awesome description for your new site here. You can edit this
+  # line in _config.yml. It will appear in your document head meta (for
+  # Google search results) and in your feed.xml site description.
+  The Oxford 3D Printing society (Ox3DP) is the first University Society in the UK for 3D printing and additive manufacturing. Embedded in the University of Oxford, we are an educational and research platform that aims to empower both academia and industry to impact the upcoming industrial revolution in the most positive way.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://oxford3dprintingsociety.com" # the base hostname & protocol for your site
+twitter_username: ox3dp
+github_username:  guillefix
 
 # Build settings
 markdown: kramdown
