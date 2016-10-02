@@ -27,6 +27,17 @@ body { overflow-y: scroll; }
     width:1000px;
 }}*/
 
+.speaker div {
+  margin-left: 250px;
+  margin-top: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.speaker img {
+  float:left;
+}
+
 @media (min-width: 1500px) {
   .container{
       width:1300px;
@@ -167,6 +178,9 @@ footer {
 	   	padding: 0px 15px;
 	   	z-index: 5
 	}
+  .nav.navbar-nav.navbar-right {
+    background-color: white;
+  }
 }
 
 .buffer {
