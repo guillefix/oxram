@@ -34,8 +34,16 @@ body { overflow-y: scroll; }
   top: 10px;
 }
 
+.speaker {
+  display: block;
+  height: 250px;
+}
+
 .speaker img {
+  width: 200px;
   float:left;
+  position: absolute;
+  clip: rect(0px,200px,200px,0px);
 }
 
 @media (min-width: 1500px) {
