@@ -181,9 +181,17 @@ footer {
   .nav.navbar-nav.navbar-right {
     background-color: white;
   }
-  .speaker div {
-    margin-left: 210px;
+}
+
+@media (max-width: 400px) {
+
+  .speaker img {
+    float: none;
   }
+  .speaker div {
+    margin-left: 10px;
+  }
+
 }
 
 .buffer {

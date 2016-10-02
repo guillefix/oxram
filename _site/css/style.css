@@ -183,6 +183,17 @@ footer {
   }
 }
 
+@media (max-width: 400px) {
+
+  .speaker img {
+    float: none;
+  }
+  .speaker div {
+    margin-left: 10px;
+  }
+
+}
+
 .buffer {
 	height:200px;
 }
