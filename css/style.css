@@ -181,6 +181,9 @@ footer {
   .nav.navbar-nav.navbar-right {
     background-color: white;
   }
+  .speaker div {
+    margin-left: 210px;
+  }
 }
 
 .buffer {
