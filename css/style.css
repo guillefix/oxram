@@ -35,8 +35,17 @@ body { overflow-y: scroll; }
 }
 
 .speaker {
-  display: block;
-  height: 250px;
+  /*overflow:visible;*/
+  min-height: 250px;
+}
+
+/*.speaker:after {
+  clear: both;
+}*/
+
+.speakers-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .speaker img {
@@ -191,13 +200,25 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+
+  .speaker div {
+    margin: 10px 10px 20px 0px;
+    position: inherit;
+    /*top: 220px;*/
+  }
+
+  .speaker {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 
   .speaker img {
+    width: 200px;
     float: none;
-  }
-  .speaker div {
-    margin-left: 10px;
+    position: inherit;
+    /*clip: rect(0px,200px,200px,0px);*/
   }
 
 }
