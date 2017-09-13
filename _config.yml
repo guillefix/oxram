@@ -8,11 +8,7 @@
 # Site settings
 title: Oxford Robotics and Additive Manufacturing Society
 email: president@oxramsociety.com
-description: > # this means to ignore newlines until "baseurl:"
-  # Write an awesome description for your new site here. You can edit this
-  # line in _config.yml. It will appear in your document head meta (for
-  # Google search results) and in your feed.xml site description.
-  The Oxford Robotics and Additive Manufacturing Society (OxRAM) is the first University Society in the UK for robotics and additive manufacturing. Embedded in the University of Oxford, we are an educational and research platform that aims to empower both academia and industry to impact the upcoming industrial revolution in the most positive way.
+description: The Oxford Robotics and Additive Manufacturing Society (OxRAM) is the first University Society in the UK for robotics and additive manufacturing. Embedded in the University of Oxford, we are an educational and research platform that aims to empower both academia and industry to impact the upcoming industrial revolution in the most positive way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.oxramsociety.com" # the base hostname & protocol for your site
 twitter_username: oxram
