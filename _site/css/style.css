@@ -305,7 +305,8 @@ footer {
 
 .home-text > div {
   position: absolute;
-  top: 50%;
+  top: 40%;
+  font-size:1.4em;
 }
 
 .spaced ul {padding: 0 25px; margin-bottom: 20px;}
@@ -317,7 +318,7 @@ footer {
   }
   .home-text > div {
     position: absolute;
-    top: 0%;
+    top: -20%;
   }
   .brandImage {
     height: auto;
@@ -333,6 +334,7 @@ footer {
       padding: 0 5px;
 
   }
+  
 
   #homeLink {
     padding: 12px 0px;
